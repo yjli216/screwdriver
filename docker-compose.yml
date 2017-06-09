@@ -1,0 +1,72 @@
+
+version: '2'
+services:
+    api:
+        image: screwdrivercd/screwdriver:stable
+        ports:
+            - 9001:80
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock:rw
+            - ./data/:/tmp/sd-data/:rw
+        environment:
+            PORT: 80
+            URI: http://192.168.97.73:9001
+            ECOSYSTEM_UI: http://192.168.97.73:9000
+            ECOSYSTEM_STORE: http://192.168.97.73:9002
+            SCM_PLUGIN: github
+            DATASTORE_PLUGIN: sequelize
+            DATASTORE_SEQUELIZE_DIALECT: sqlite
+            DATASTORE_SEQUELIZE_STORAGE: /tmp/sd-data/storage.db
+            EXECUTOR_PLUGIN: docker
+            SECRET_WHITELIST: "[]"
+            EXECUTOR_DOCKER_DOCKER: |
+                {
+                    "socketPath": "/var/run/docker.sock"
+                }
+            SECRET_OAUTH_CLIENT_ID: eeb684b6c413b2420641
+            SECRET_OAUTH_CLIENT_SECRET: 2dd5d8e3d06717ea7821bee450978762fdced6dd
+            SECRET_JWT_PRIVATE_KEY: |
+                -----BEGIN RSA PRIVATE KEY-----
+                MIICWwIBAAKBgQCrD1vBZOmXrbFkca6ZMT91sD7viDxsmnDId1gy+3/WwEmqTxV1
+                wd4J0pU8izqTvq2WJfRXc3piR/SgdHYz7HtYnJ7mQuglok2WkmLIaAu//VD3uj7I
+                iK0eYdqAU/b+wI12UbMQwNNPQA6Dk/BFRzqfTHbHXdZaV4C4BM9QzKUSjwIDAQAB
+                AoGAbfJKLGx7A4WdbgzvhwEzY6ZrXTP4emltsjubEfG6gkJHVtLL3UtFNpUGXMq0
+                VMAK/GXavda4Q7EyF2ujic4mnInG62TKlJNGWOSxxKG0lJHe6uyfGrcmAlxJXPut
+                h2k/PgzVqG4uVkDFr8/H7lo60TuySSI16ODKS41qOLuQDcECQQDVdlq/kXxfSUlq
+                xHVjmr1G7pZUPbl5gBChsFnB670eUyg8rMZAuYe4AYX3DTxA5aTbXMlL8hHba4ET
+                tkzibfTvAkEAzSXgPYoOTNOF2Ekd2VniXyPCgCGBFSn4J9wPXEkw52QgzgLvRd46
+                4vzjUze6yfOYvmvxEsRBJqti1bbSOiD8YQJAKuL3gouJUF+aB4BnEVbydkDTJSOt
+                kvKe5M1YizSAr4oHiIEx56ke0mJD9wnKtEMvJv9yVfbRjaMAsOQseEWdMwJAEcBw
+                SgLzP9Sh5VhWW+N6Qi9O+lVr3Q/3qENTlPHEaJFygUEhwVL8l324kg/leuo4Umn2
+                v1/6H0V/VOzv/hWyoQJAIRRYhmeFqjZGpliqEdBYkX5VaD650mtKR34MKWmYwWGI
+                D4o/anrDESaKF3xn4J32Ycam/T60Q/AXhOGTfjdoLQ==
+                -----END RSA PRIVATE KEY-----
+            SECRET_JWT_PUBLIC_KEY: |
+                -----BEGIN PUBLIC KEY-----
+                MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrD1vBZOmXrbFkca6ZMT91sD7v
+                iDxsmnDId1gy+3/WwEmqTxV1wd4J0pU8izqTvq2WJfRXc3piR/SgdHYz7HtYnJ7m
+                Quglok2WkmLIaAu//VD3uj7IiK0eYdqAU/b+wI12UbMQwNNPQA6Dk/BFRzqfTHbH
+                XdZaV4C4BM9QzKUSjwIDAQAB
+                -----END PUBLIC KEY-----
+    ui:
+        image: screwdrivercd/ui:stable
+        ports:
+            - 9000:80
+        environment:
+            ECOSYSTEM_API: http://192.168.97.73:9001
+            ECOSYSTEM_STORE: http://192.168.97.73:9002
+
+    store:
+        image: screwdrivercd/store:stable
+        ports:
+            - 9002:80
+        environment:
+            ECOSYSTEM_UI: http://192.168.97.73:9000
+            URI: http://192.168.97.73:9002
+            SECRET_JWT_PUBLIC_KEY: |
+                -----BEGIN PUBLIC KEY-----
+                MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrD1vBZOmXrbFkca6ZMT91sD7v
+                iDxsmnDId1gy+3/WwEmqTxV1wd4J0pU8izqTvq2WJfRXc3piR/SgdHYz7HtYnJ7m
+                Quglok2WkmLIaAu//VD3uj7IiK0eYdqAU/b+wI12UbMQwNNPQA6Dk/BFRzqfTHbH
+                XdZaV4C4BM9QzKUSjwIDAQAB
+                -----END PUBLIC KEY-----

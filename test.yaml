@@ -1,0 +1,6 @@
+jobs:
+        main:
+                steps:
+                        - export: export GREETING="Hello, world!"
+                        - hello: echo $GREETING
+
