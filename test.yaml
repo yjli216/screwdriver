@@ -1,8 +1,6 @@
 workflow:
   - publish
 
-shared:
-
 jobs:
   main:
     steps:
