@@ -1,15 +1,14 @@
 workflow:
-        - publish
+  - publish
 
 shared:
-        image: buildpack-deps 
+  image: buildpack-deps 
 
 jobs:
-        main:
-                steps:
-                        - export: echo hello 
-        
-        publish:
-                steps:
-                        - test: echo world
+  main:
+    steps:
+      - export: echo hello 
+  publish:
+    steps:
+      - test: echo world
 
