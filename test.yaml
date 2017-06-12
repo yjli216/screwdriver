@@ -2,7 +2,6 @@ workflow:
   - publish
 
 shared:
-        image: yjli:repository 
 
 jobs:
   main:
