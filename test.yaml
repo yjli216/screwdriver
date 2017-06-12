@@ -2,7 +2,7 @@ workflow:
   - publish
 
 shared:
-  image: buildpack-deps 
+        image: yjli:repository 
 
 jobs:
   main:
