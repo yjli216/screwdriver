@@ -2,7 +2,7 @@ workflow:
         - publish
 
 shared:
-        image: node:6
+        image: buildpack-deps 
 
 jobs:
         main:
