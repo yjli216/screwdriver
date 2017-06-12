@@ -27,26 +27,26 @@ services:
             SECRET_OAUTH_CLIENT_SECRET: 2dd5d8e3d06717ea7821bee450978762fdced6dd
             SECRET_JWT_PRIVATE_KEY: |
                 -----BEGIN RSA PRIVATE KEY-----
-                MIICXQIBAAKBgQDANvNBx1lieVghVZuRX+0uGC6HCGhwnSTTuRkfrrE7nLd5+rOq
-                SCqfJXKlK5+wHLLC+/lVbAuoYhwVfZ6il8DE2EDXv8Ebg6s45NwM5koe1IDyyyYt
-                F+wnXOGU0o1KKkPX1dqpv4IAqM8fjimzv/ZjdSVIbSQaiCHoa71YoDGjJwIDAQAB
-                AoGAHNkicUDmHW1w2K/shUkMY9qlQQb2BdDP8ibZqnOhjfzbXKdPx8LFAtWv+zIs
-                6VWlTrZamYN5zG/NHzyXTnfQKnhfag7LSOi7nC+22tXlfxF5YRcQ/Y+r0boA68n/
-                BarAlBc1j4sf3z/xS0Eo8P4NVJYOQ60kHR+BBzig/6SV0aECQQDjQ8zAnHZG6J2r
-                8U1IJtQsykh+fJfqRwjHQNyveQvSEfWZLLBafJ5QmoI6HF8XuJZoU1IjPeQqjbyW
-                p21DEMczAkEA2IShr8dE1V45ERGeSKg2LDsF5v/fE8pagLzIF/h0pHJ13eYe2v1p
-                AyK6n2uzNn7nTRWWNopvUnzHvffTRhUkPQJAYDVzmJaj+6C+HuwoK0NEzzFTPzi/
-                lw47SR7MTfyQZH312sJwZd4bp0PBnZglKYWbJs8fFow860bVb3Gxb5LKwQJBANMd
-                0AHzTPy3WPF5ulqiGeBa1NB+oWdMoZ5xdLFaw3EtYhwxq9hfyysRi+KyQxZZ+vLA
-                n60iopVNsf1bThhBuQkCQQDAg2HQ+1HV1NCRaIrirm6f+q5nzhVLTpKB+YzdiB4n
-                XCswmzfRacUnI+0DXGRJ0qp9rVEWK2leEf8/AbH2Rbsh
+                MIICXQIBAAKBgQDskRCT5i3od56E9NZn2EEzdJm6rUvx4C0cqHl/WZGmxl7RELds
+                f3+CiH8pEAZ7zD8KK9p2aHYLg5B/yYMje5pnk4HDeEWkkbX21jzrqYL0qqkwvkwz
+                qdX02v5hQSBm0agTqCp/6+KWJWrJI3aAPAx/a72whkXARsGY47VdQKIpZQIDAQAB
+                AoGBAN0FE4X68j1VNSdnUMIoy5H1iINe0aukFMHHrewLlQdKIuAVTCn0XP9p49RL
+                gqM7SlKIck1af592RhT+AqWuH6yFp8+V38HijynXR/yeUJ9u0h0SOcPDKqeMM/Lr
+                BWyn2x67RkW6ZJqPePnve5IqnYGHBC5yzRUcBWsBkZsoHWIpAkEA/G7o1H6UYfyL
+                dNVniiZi3xpTPq26rsmo8DDvdNjNMJDkpgdYFbtbfgw4jU3tNlrej8a6rpzVScb9
+                8dtd+8LASwJBAO/ow2uHnTEqoTZu5myFKMe67tb2ztH21j6oa/DJT7zvyccBi321
+                OALXoY0Ly0fJrTdJT4lcX5LheTEhx/kNjw8CQQCQj4dgoXiiQLkwWEHqOJ9oeq/v
+                dhgxnqTToIKRHNMtG90FQ7FrCJeVsLP2IAlXlmRcXAdulbwDeyTUi7bfxaDPAkB1
+                1GCGo6i0yTc8wOMzUYNh9ZHwym9x+EXpqFa7gGRFa5AyybN1HlhQLRAPckd5Drig
+                esUxtcjLHyqi0vCgheRJAkBDDMlmrUKaxC/9yeqTG+9cLAL2iFFS3qAKwKYnGR8N
+                dMay+TVvZLwoq9BbiLvFwtntns0R8znhKovL6L9+PQ6I
                 -----END RSA PRIVATE KEY-----
             SECRET_JWT_PUBLIC_KEY: |
                 -----BEGIN PUBLIC KEY-----
-                MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDANvNBx1lieVghVZuRX+0uGC6H
-                CGhwnSTTuRkfrrE7nLd5+rOqSCqfJXKlK5+wHLLC+/lVbAuoYhwVfZ6il8DE2EDX
-                v8Ebg6s45NwM5koe1IDyyyYtF+wnXOGU0o1KKkPX1dqpv4IAqM8fjimzv/ZjdSVI
-                bSQaiCHoa71YoDGjJwIDAQAB
+                MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDskRCT5i3od56E9NZn2EEzdJm6
+                rUvx4C0cqHl/WZGmxl7RELdsf3+CiH8pEAZ7zD8KK9p2aHYLg5B/yYMje5pnk4HD
+                eEWkkbX21jzrqYL0qqkwvkwzqdX02v5hQSBm0agTqCp/6+KWJWrJI3aAPAx/a72w
+                hkXARsGY47VdQKIpZQIDAQAB
                 -----END PUBLIC KEY-----
     ui:
         image: screwdrivercd/ui:stable
@@ -65,8 +65,8 @@ services:
             URI: http://192.168.97.73:9002
             SECRET_JWT_PUBLIC_KEY: |
                 -----BEGIN PUBLIC KEY-----
-                MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDANvNBx1lieVghVZuRX+0uGC6H
-                CGhwnSTTuRkfrrE7nLd5+rOqSCqfJXKlK5+wHLLC+/lVbAuoYhwVfZ6il8DE2EDX
-                v8Ebg6s45NwM5koe1IDyyyYtF+wnXOGU0o1KKkPX1dqpv4IAqM8fjimzv/ZjdSVI
-                bSQaiCHoa71YoDGjJwIDAQAB
+                MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDskRCT5i3od56E9NZn2EEzdJm6
+                rUvx4C0cqHl/WZGmxl7RELdsf3+CiH8pEAZ7zD8KK9p2aHYLg5B/yYMje5pnk4HD
+                eEWkkbX21jzrqYL0qqkwvkwzqdX02v5hQSBm0agTqCp/6+KWJWrJI3aAPAx/a72w
+                hkXARsGY47VdQKIpZQIDAQAB
                 -----END PUBLIC KEY-----
