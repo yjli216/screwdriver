@@ -23,30 +23,30 @@ services:
                 {
                     "socketPath": "/var/run/docker.sock"
                 }
-            SECRET_OAUTH_CLIENT_ID: 
-            SECRET_OAUTH_CLIENT_SECRET: 
+            SECRET_OAUTH_CLIENT_ID: eeb684b6c413b2420641
+            SECRET_OAUTH_CLIENT_SECRET: 2dd5d8e3d06717ea7821bee450978762fdced6dd
             SECRET_JWT_PRIVATE_KEY: |
                 -----BEGIN RSA PRIVATE KEY-----
-                MIICXAIBAAKBgQC+Yl6y4qj61N7AyG7dLJaoCb3plhYek+uvTWK4Wtt9g6cNvVeL
-                G62peQPD3s4CE9CQmt9DLxu2aDanfQ8OWHMoZxqp8v+brf4gaydteyuIvE7G3gMP
-                lUBwp9anSIcMR42gLCziu0BJ/iN2w37DHeSUeTDHmzdEfnV9d1reTZ3xtwIDAQAB
-                AoGAHVKtX0QF3sxWmr7ERJCPi8YkWAvj0EXcMR3sLJTh5Y0Xd8hH6YcT0lxvNgXl
-                GPDQWNVhuclRrWCTumxKm10IL1ZboSHX/ZHCPB72RLYJriy4heCKy7ADPKdPTVLQ
-                2ZHSrL+mdd5HsOojFuEZ19SkW3j0KjEe8gZgtDg6WK2DQ8ECQQD5xXZuHP5QnW9a
-                FMpbmy3P7lUzNTpy9xTOc6s3xLXmHutFmXCLg0nq+dEwyf6xiBUuWlgU7qbQUY4O
-                os5bZpcxAkEAwyHH5dbpm6u23pflNTZ34ElzhFa6iNNPGpEtaojoszEqNxf/e4eo
-                7876h5RU3uO47m3dtqUOJpbo15XnERutZwJBAJA4tsOqNiayYWOwcZAnsHJJ+iRR
-                beiIRxlWrNzM1wODgvJzQQstyfbGPUZgvJIiM6jKPeYIT4YmMVK+K02XlWECQFp0
-                UmHtGiWbmA3fg9UDBtbltbLnMVkz+ztpiRAVnylR5Svc6AWvgVSJMgGfdShNj/CW
-                5WxBXynsUst9Jbv8hIkCQCoXoIeRFTMhUvJLvNEjWLJ8ecfKo2XxB41QxIoPqTe2
-                g2sF6pKM5nncJR/W+fiodP0ZCcsEZ6l4lmUqMjgXXPk=
+                MIICXQIBAAKBgQDANvNBx1lieVghVZuRX+0uGC6HCGhwnSTTuRkfrrE7nLd5+rOq
+                SCqfJXKlK5+wHLLC+/lVbAuoYhwVfZ6il8DE2EDXv8Ebg6s45NwM5koe1IDyyyYt
+                F+wnXOGU0o1KKkPX1dqpv4IAqM8fjimzv/ZjdSVIbSQaiCHoa71YoDGjJwIDAQAB
+                AoGAHNkicUDmHW1w2K/shUkMY9qlQQb2BdDP8ibZqnOhjfzbXKdPx8LFAtWv+zIs
+                6VWlTrZamYN5zG/NHzyXTnfQKnhfag7LSOi7nC+22tXlfxF5YRcQ/Y+r0boA68n/
+                BarAlBc1j4sf3z/xS0Eo8P4NVJYOQ60kHR+BBzig/6SV0aECQQDjQ8zAnHZG6J2r
+                8U1IJtQsykh+fJfqRwjHQNyveQvSEfWZLLBafJ5QmoI6HF8XuJZoU1IjPeQqjbyW
+                p21DEMczAkEA2IShr8dE1V45ERGeSKg2LDsF5v/fE8pagLzIF/h0pHJ13eYe2v1p
+                AyK6n2uzNn7nTRWWNopvUnzHvffTRhUkPQJAYDVzmJaj+6C+HuwoK0NEzzFTPzi/
+                lw47SR7MTfyQZH312sJwZd4bp0PBnZglKYWbJs8fFow860bVb3Gxb5LKwQJBANMd
+                0AHzTPy3WPF5ulqiGeBa1NB+oWdMoZ5xdLFaw3EtYhwxq9hfyysRi+KyQxZZ+vLA
+                n60iopVNsf1bThhBuQkCQQDAg2HQ+1HV1NCRaIrirm6f+q5nzhVLTpKB+YzdiB4n
+                XCswmzfRacUnI+0DXGRJ0qp9rVEWK2leEf8/AbH2Rbsh
                 -----END RSA PRIVATE KEY-----
             SECRET_JWT_PUBLIC_KEY: |
                 -----BEGIN PUBLIC KEY-----
-                MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+Yl6y4qj61N7AyG7dLJaoCb3p
-                lhYek+uvTWK4Wtt9g6cNvVeLG62peQPD3s4CE9CQmt9DLxu2aDanfQ8OWHMoZxqp
-                8v+brf4gaydteyuIvE7G3gMPlUBwp9anSIcMR42gLCziu0BJ/iN2w37DHeSUeTDH
-                mzdEfnV9d1reTZ3xtwIDAQAB
+                MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDANvNBx1lieVghVZuRX+0uGC6H
+                CGhwnSTTuRkfrrE7nLd5+rOqSCqfJXKlK5+wHLLC+/lVbAuoYhwVfZ6il8DE2EDX
+                v8Ebg6s45NwM5koe1IDyyyYtF+wnXOGU0o1KKkPX1dqpv4IAqM8fjimzv/ZjdSVI
+                bSQaiCHoa71YoDGjJwIDAQAB
                 -----END PUBLIC KEY-----
     ui:
         image: screwdrivercd/ui:stable
@@ -65,8 +65,8 @@ services:
             URI: http://192.168.97.73:9002
             SECRET_JWT_PUBLIC_KEY: |
                 -----BEGIN PUBLIC KEY-----
-                MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+Yl6y4qj61N7AyG7dLJaoCb3p
-                lhYek+uvTWK4Wtt9g6cNvVeLG62peQPD3s4CE9CQmt9DLxu2aDanfQ8OWHMoZxqp
-                8v+brf4gaydteyuIvE7G3gMPlUBwp9anSIcMR42gLCziu0BJ/iN2w37DHeSUeTDH
-                mzdEfnV9d1reTZ3xtwIDAQAB
+                MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDANvNBx1lieVghVZuRX+0uGC6H
+                CGhwnSTTuRkfrrE7nLd5+rOqSCqfJXKlK5+wHLLC+/lVbAuoYhwVfZ6il8DE2EDX
+                v8Ebg6s45NwM5koe1IDyyyYtF+wnXOGU0o1KKkPX1dqpv4IAqM8fjimzv/ZjdSVI
+                bSQaiCHoa71YoDGjJwIDAQAB
                 -----END PUBLIC KEY-----
