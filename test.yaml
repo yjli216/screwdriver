@@ -2,7 +2,7 @@ workflow:
   - publish
 
 shared:
-        image: node:6
+        image: python:2 
 
 jobs:
   main:
